@@ -90,9 +90,9 @@ namespace Test
         public void GetLatestMove()
         {
             scraper.FindPlayerColor();
-            string move = scraper.GetLatestMove();
+            string move = scraper.GetLatestMoveForWhite();
             string square = board.TranslateMoveToSquare(move);
-            Debug.WriteLine("wt");
+            Debug.WriteLine("");
 
         }
     }
