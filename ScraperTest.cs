@@ -71,8 +71,8 @@ namespace Test
             scraper.ShowAnalyzedIcon(square3, good);
             scraper.ShowAnalyzedIcon(square4, greatFind);
             scraper.ShowAnalyzedIcon(square5, inaccuracy);
-            scraper.ShowAnalyzedIcon(square5, greatFind);
-            scraper.ShowAnalyzedIcon(square5, blunder);
+            scraper.ShowAnalyzedIcon(square6, GreatFind);
+            scraper.ShowAnalyzedIcon(square7, blunder);
 
 
         }
