@@ -20,6 +20,7 @@ namespace Test
         GameScraper gameScraper;
         ChessBoard board = new ChessBoard();
         LastMoveIcon lastMoveIcon;
+        EvaluationBar evalBar;
         public ScraperTest() 
         {
             var driver = new ChromeDriver();
@@ -77,6 +78,20 @@ namespace Test
 
         }
 
+        [Fact]
+        public void evalBarTest()
+        {
+            gameScraper.FindPlayerColor();
+            this.evalBar = new EvaluationBar(scraper.driver);
+
+            evalBar.CreateBar(gameScraper.isWhite);
+            evalBar.UpdateBar(gameScraper.isWhite, 2000, null);
+            evalBar.UpdateBar(gameScraper.isWhite, 0, null);
+            evalBar.UpdateBar(gameScraper.isWhite, 3600, null);
+            evalBar.UpdateBar(gameScraper.isWhite, -4000, null);
+            evalBar.UpdateBar(gameScraper.isWhite, -8000, null);
+            evalBar.UpdateBar(gameScraper.isWhite, 0, null);
+        }
 
 
     }
