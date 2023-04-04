@@ -91,7 +91,7 @@ namespace Test
         {
             scraper.FindPlayerColor();
             string move = scraper.GetLatestMoveForWhite();
-            string square = board.TranslateMoveToSquare(move);
+            //string square = board.TranslateMoveToSquare(move);
             Debug.WriteLine("");
 
         }
