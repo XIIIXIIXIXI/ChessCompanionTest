@@ -91,6 +91,8 @@ namespace Test
             evalBar.UpdateBar(gameScraper.isWhite, -4000, null);
             evalBar.UpdateBar(gameScraper.isWhite, -8000, null);
             evalBar.UpdateBar(gameScraper.isWhite, 0, null);
+            evalBar.UpdateBar(gameScraper.isWhite, null, 2);
+            evalBar.UpdateBar(gameScraper.isWhite, null, -2);
         }
 
 
