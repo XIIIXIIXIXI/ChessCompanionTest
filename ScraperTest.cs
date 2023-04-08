@@ -19,7 +19,6 @@ namespace Test
         Scraper scraper;
         GameScraper gameScraper;
         ChessBoard board = new ChessBoard();
-        LastMoveIcon lastMoveIcon;
         EvaluationBar evalBar;
         public ScraperTest() 
         {
@@ -84,7 +83,7 @@ namespace Test
             gameScraper.FindPlayerColor();
             this.evalBar = new EvaluationBar(scraper.driver);
 
-            evalBar.CreateBar(gameScraper.isWhite);
+            /*evalBar.CreateBar(gameScraper.isWhite);
             evalBar.UpdateBar(gameScraper.isWhite, 2000, null, 'w');
             evalBar.UpdateBar(gameScraper.isWhite, 0, null, 'w');
             evalBar.UpdateBar(gameScraper.isWhite, 3600, null, 'w');
@@ -92,7 +91,14 @@ namespace Test
             evalBar.UpdateBar(gameScraper.isWhite, -8000, null, 'w');
             evalBar.UpdateBar(gameScraper.isWhite, 0, null, 'w');
             evalBar.UpdateBar(gameScraper.isWhite, null, 2, 'w');
-            evalBar.UpdateBar(gameScraper.isWhite, null, -2, 'w');
+            evalBar.UpdateBar(gameScraper.isWhite, null, -2, 'w');*/
+
+            evalBar.CreateBar(gameScraper.isWhite);
+            evalBar.UpdateBar(gameScraper.isWhite, 2000, null, 'b');
+            evalBar.UpdateBar(gameScraper.isWhite, 0, null, 'b');
+            evalBar.UpdateBar(gameScraper.isWhite, 3600, null, 'b');
+            evalBar.UpdateBar(gameScraper.isWhite, -4000, null, 'b');
+            evalBar.UpdateBar(gameScraper.isWhite, -8000, null, 'b');
         }
 
 
