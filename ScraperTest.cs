@@ -85,14 +85,14 @@ namespace Test
             this.evalBar = new EvaluationBar(scraper.driver);
 
             evalBar.CreateBar(gameScraper.isWhite);
-            evalBar.UpdateBar(gameScraper.isWhite, 2000, null);
-            evalBar.UpdateBar(gameScraper.isWhite, 0, null);
-            evalBar.UpdateBar(gameScraper.isWhite, 3600, null);
-            evalBar.UpdateBar(gameScraper.isWhite, -4000, null);
-            evalBar.UpdateBar(gameScraper.isWhite, -8000, null);
-            evalBar.UpdateBar(gameScraper.isWhite, 0, null);
-            evalBar.UpdateBar(gameScraper.isWhite, null, 2);
-            evalBar.UpdateBar(gameScraper.isWhite, null, -2);
+            evalBar.UpdateBar(gameScraper.isWhite, 2000, null, 'w');
+            evalBar.UpdateBar(gameScraper.isWhite, 0, null, 'w');
+            evalBar.UpdateBar(gameScraper.isWhite, 3600, null, 'w');
+            evalBar.UpdateBar(gameScraper.isWhite, -4000, null, 'w');
+            evalBar.UpdateBar(gameScraper.isWhite, -8000, null, 'w');
+            evalBar.UpdateBar(gameScraper.isWhite, 0, null, 'w');
+            evalBar.UpdateBar(gameScraper.isWhite, null, 2, 'w');
+            evalBar.UpdateBar(gameScraper.isWhite, null, -2, 'w');
         }
 
 
