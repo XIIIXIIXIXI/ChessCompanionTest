@@ -30,9 +30,9 @@ namespace Test
         {
             engine.SetPosition("rnb1kb2/pp1ppprp/7P/q1p5/3Pn3/1P1B1Np1/P1PQ1PP1/RNB1K2R w KQq - 1 11");
             engine.setLines(5);
-            TopMove[] topMoves = new TopMove[4];
+            TopMove[] topMoves = new TopMove[5];
             topMoves = engine.GetMultipleLines(1000);
-            engine.OrderTopMoves(topMoves);
+            //engine.OrderTopMoves(topMoves);
             Debug.WriteLine("g");
 
         }
