@@ -17,6 +17,7 @@ namespace Test
         GameScraper scraper;
         ChessBoard board = new ChessBoard();
         
+        
         public GameScraperTest()
         {
             var driver = new ChromeDriver();
@@ -89,6 +90,17 @@ namespace Test
         [Fact]
         public void GetLatestMove()
         {
+            scraper.FindPlayerColor();
+            string move = scraper.GetLatestMoveForWhite();
+            //string square = board.TranslateMoveToSquare(move);
+            Debug.WriteLine("");
+
+        }
+
+        [Fact]
+        public void MultipleLines()
+        {
+            
             scraper.FindPlayerColor();
             string move = scraper.GetLatestMoveForWhite();
             //string square = board.TranslateMoveToSquare(move);
