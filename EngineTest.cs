@@ -32,9 +32,6 @@ namespace Test
             engine.setLines(5);
             TopMove[] topMoves = new TopMove[5];
             topMoves = engine.GetMultipleLines(1000);
-            //engine.OrderTopMoves(topMoves);
-            Debug.WriteLine("g");
-
         }
 
     }
