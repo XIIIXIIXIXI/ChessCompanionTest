@@ -19,7 +19,7 @@ namespace Test
         
         public EngineTest()
         {
-            this.engine = new Engine(@"C:\Users\marti\source\repos\chessEval\chessEval\stockfish_20090216_x64_avx2");
+            this.engine = new Engine(@"C:\Users\marti\source\repos\martinkoch1\Stockfish_Polyglot_15_64-bit");
         }
         public void Dispose() 
         {
