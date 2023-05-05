@@ -91,7 +91,7 @@ namespace Test
         public void GetLatestMove()
         {
             scraper.FindPlayerColor();
-            string move = scraper.GetLatestMoveForWhite();
+            string move = scraper.GetLatestMoveForPlayer();
             //string square = board.TranslateMoveToSquare(move);
             Debug.WriteLine("");
 
@@ -102,7 +102,7 @@ namespace Test
         {
             
             scraper.FindPlayerColor();
-            string move = scraper.GetLatestMoveForWhite();
+            string move = scraper.GetLatestMoveForPlayer();
             //string square = board.TranslateMoveToSquare(move);
             Debug.WriteLine("");
 
