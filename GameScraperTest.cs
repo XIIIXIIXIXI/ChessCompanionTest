@@ -1,5 +1,5 @@
-﻿using ChessCompanion.MVVM.Model;
-using ChessCompanion.MVVM.Utility;
+﻿using ChessCompanion.Core;
+using ChessCompanion.MVVM.Model.Data;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;

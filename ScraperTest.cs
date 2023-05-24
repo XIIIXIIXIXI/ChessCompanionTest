@@ -6,11 +6,13 @@ using SeleniumExtras.WaitHelpers;
 using Xunit.Sdk;
 using System.Security.Policy;
 using OpenQA.Selenium.Chrome;
-using ChessCompanion.MVVM.Utility;
 using OpenQA.Selenium;
 using System.Reflection.Metadata;
 using System.Windows.Documents;
+using ChessCompanion.Core;
 using ChessCompanion.MVVM.Model;
+using ChessCompanion.MVVM.Model.Utility;
+using ChessCompanion.MVVM.Model.Data;
 
 namespace Test
 {
@@ -82,23 +84,14 @@ namespace Test
         {
             gameScraper.FindPlayerColor();
             this.evalBar = new EvaluationBar(scraper.driver);
-
-            /*evalBar.CreateBar(gameScraper.isWhite);
-            evalBar.UpdateBar(gameScraper.isWhite, 2000, null, 'w');
-            evalBar.UpdateBar(gameScraper.isWhite, 0, null, 'w');
-            evalBar.UpdateBar(gameScraper.isWhite, 3600, null, 'w');
-            evalBar.UpdateBar(gameScraper.isWhite, -4000, null, 'w');
-            evalBar.UpdateBar(gameScraper.isWhite, -8000, null, 'w');
-            evalBar.UpdateBar(gameScraper.isWhite, 0, null, 'w');
-            evalBar.UpdateBar(gameScraper.isWhite, null, 2, 'w');
-            evalBar.UpdateBar(gameScraper.isWhite, null, -2, 'w');*/
-
             evalBar.CreateBar(gameScraper.isWhite);
             evalBar.UpdateBar(gameScraper.isWhite, 2000, null, 'b');
             evalBar.UpdateBar(gameScraper.isWhite, 0, null, 'b');
             evalBar.UpdateBar(gameScraper.isWhite, 3600, null, 'b');
             evalBar.UpdateBar(gameScraper.isWhite, -4000, null, 'b');
             evalBar.UpdateBar(gameScraper.isWhite, -8000, null, 'b');
+            evalBar.UpdateBar(gameScraper.isWhite, null, 2, 'w');
+            evalBar.RemoveBar();
         }
 
 
