@@ -16,6 +16,7 @@ namespace Test
        
         GameScraper scraper;
         ChessBoard board = new ChessBoard();
+       
         
         
         public GameScraperTest()
@@ -106,6 +107,14 @@ namespace Test
             //string square = board.TranslateMoveToSquare(move);
             Debug.WriteLine("");
 
+        }
+
+        [Fact]
+        public void GetPieceFromMoveTest()
+        {
+            String move = "e2";
+            board[4, 1] = ChessPiece.TranslateStringToChessPiece("wr");
+            String piece = board.GetPieceFromSquare(move);
         }
     }
 }
